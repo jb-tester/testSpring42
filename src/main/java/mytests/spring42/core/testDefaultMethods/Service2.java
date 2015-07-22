@@ -7,13 +7,17 @@ import org.springframework.context.annotation.Bean;
  * project: testSpring42
  */
 @SuppressWarnings("DefaultFileTemplate")
-interface Service2 {
+public interface Service2 {
     @Bean
     default Bean2 defBean2(){
         return new Bean2("defBean1 from service2");
     }
     @Bean
     default Bean3 defBean3(){
-        return new Bean3("defBean3 from Service1");
+        return new Bean3("defBean3 from Service2");
+    }
+    @Bean
+    default Bean4 defBean4(){
+        return new Bean4("defBean4 from Service1");
     }
 }

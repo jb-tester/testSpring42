@@ -25,6 +25,17 @@ public class Comp1 {
     @Autowired
     private Bean3 defBean3;
 
+    @Qualifier("defBean4")
+    @Autowired
+    private Bean4 bean4;
+    // bean from super interface Service0 should not be found:
+   /* @Autowired
+    private Bean5 defBean5;
+
+    public Bean5 getDefBean5() {
+        return defBean5;
+    }*/
+
     public Bean3 getBean3() {
         return bean3;
     }
@@ -41,11 +52,16 @@ public class Comp1 {
         return defBean3;
     }
 
+    public Bean4 getBean4() {
+        return bean4;
+    }
+
     public void displayAutowired(){
         getDefBean1();
         getDefBean2();
         getBean3();
         getDefBean3();
-
+        getBean4();
+       // getDefBean5();
     }
 }
