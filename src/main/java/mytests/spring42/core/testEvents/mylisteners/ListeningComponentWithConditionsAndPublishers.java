@@ -1,8 +1,6 @@
 package mytests.spring42.core.testEvents.mylisteners;
 
-import mytests.spring42.core.testEvents.myevents.MyEvent1;
-import mytests.spring42.core.testEvents.myevents.MyEvent2;
-import mytests.spring42.core.testEvents.myevents.MyEvent3;
+import mytests.spring42.core.testEvents.myevents.*;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
@@ -47,4 +45,8 @@ public class ListeningComponentWithConditionsAndPublishers {
         return new MyEvent2("test event2 invocation from event1 listener");
     }
 
+    @EventListener
+    public void listenGenericBean1Event(GenericEvent<Bean1> event){
+        System.out.println("========= generic event for bean1 ========== ");
+    }
 }
