@@ -25,6 +25,8 @@ public class RunMe {
         ctx.publishEvent(new MyEvent3(comp3,999));
         cmp2.publishMyEvent1();
         cmp2.publishMyEvent2();
+        cmp2.publishGenericBean1Event();
+        cmp2.publishGenericBean2Event();
         ctx.publishEvent("test String event passing");
 
     }
