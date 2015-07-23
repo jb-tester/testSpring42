@@ -5,14 +5,14 @@ package mytests.spring42.core.testEvents.myevents;
  * project: testSpring42
  */
 public class MyEvent2 {
-    private String str;
+    private String myStr;
 
     public MyEvent2(String str) {
-        this.str = str;
+        this.myStr = str;
     }
 
-    public String getStr() {
+    public String getMyStr() {
 
-        return str;
+        return myStr;
     }
 }
