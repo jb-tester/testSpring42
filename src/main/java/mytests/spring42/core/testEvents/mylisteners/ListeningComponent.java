@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  * project: testSpring42
  */
 @Component
-public class Comp1 {
+public class ListeningComponent {
     @EventListener
     public void listenContextStoppedEvent(ContextStoppedEvent event){
         System.out.println("****************************");
@@ -53,7 +53,7 @@ public class Comp1 {
         public void listenMyEvent2(MyEvent2 event2){
         System.out.println("*************************");
 
-        System.out.println("myEvent2 "+event2.getStr());
+        System.out.println("myEvent2 "+event2.getMyStr());
         System.out.println("*************************");
     }
 

@@ -7,5 +7,5 @@ import org.springframework.stereotype.Component;
  * project: testSpring42
  */
 @Component
-public class Comp3 {
+public class JustComponent {
 }

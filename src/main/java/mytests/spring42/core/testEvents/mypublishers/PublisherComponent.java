@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * project: testSpring42
  */
 @Component
-public class Comp2  {
+public class PublisherComponent {
     @Autowired
     private ApplicationEventPublisher publisher;
 
@@ -21,7 +21,7 @@ public class Comp2  {
         publisher.publishEvent(ev);
     }
     public void publishMyEvent2(){
-        MyEvent2 ev = new MyEvent2("ccc");
+        MyEvent2 ev = new MyEvent2("foo");
         publisher.publishEvent(ev);
     }
 }
