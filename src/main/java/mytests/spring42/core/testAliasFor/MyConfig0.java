@@ -10,7 +10,8 @@ import org.springframework.core.annotation.AliasFor;
  */
 //@MyConfig(name = "foo")
 //@MyCompScanner(scannedPackages = "mytests.spring42.core.testAliasFor.scannedComps")
-    @ComplexConfigAnnotation(scannedPackages = "mytests.spring42.core.testAliasFor.scannedComps", xmlConfigFiles = "aaa.xml")
+@ComplexConfigAnnotation(scannedPackages = "mytests.spring42.core.testAliasFor.scannedComps", xmlConfigFiles = "aaa.xml")
 public class MyConfig0 {
 
+   // uses complex annotation that includes Configuration+ComponentScan+ImportResource
 }
