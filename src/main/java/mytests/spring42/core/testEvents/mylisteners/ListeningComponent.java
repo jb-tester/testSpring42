@@ -21,6 +21,7 @@ public class ListeningComponent {
         System.out.println("****************************");
 
     }
+
     @EventListener(ContextStartedEvent.class)
     public void listenContextStartedEvent(){
         System.out.println("****************************");
@@ -35,6 +36,7 @@ public class ListeningComponent {
         System.out.println("string was published: "+arg);
         System.out.println("****************************");
     }
+
     @EventListener
     public void listenMyEvent1(MyEvent1 event1){
         System.out.println("*************************");
