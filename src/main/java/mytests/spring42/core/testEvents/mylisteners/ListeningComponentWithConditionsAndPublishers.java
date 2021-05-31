@@ -49,4 +49,9 @@ public class ListeningComponentWithConditionsAndPublishers {
     public void listenGenericBean1Event(GenericEvent<Bean1> event){
         System.out.println("========= generic event for bean1 ========== ");
     }
+    @EventListener
+    public void listenGenericEvent(GenericEvent event){
+        System.out.println("========= generic event for some bean ========== ");
+    }
+
 }
